@@ -1,5 +1,7 @@
+
+
 export default {
-    '/': 'indexView',
+    '/': 'index',
     // '/about': 'aboutView',
     // '/home': 'homeView',
 }

@@ -4,7 +4,7 @@ Vite based vue3-boilerplate template.
 Includes:
  - [x] vue-router
  - [x] vuetify3
- - [x] piana store
+ - [x] pinia store
 
 ## How to run
 
@@ -20,12 +20,18 @@ $ vitest
 
  - [ ] **/.github** github actions
  - [x] **/src** main source root, aliased `'@/'`
+   - [ ] **./models** data models
    - [x] **./assets** media & data assets
    - [x] **./components** common components
-   - [x] **./plugins** common plugins, including vuetify, vue-router
-   - [ ] **./stores** piana stores
    - [x] **./views** vue-router components and its path fragment
+   - [x] **./plugins** common plugins, including vuetify, vue-router
+   - [ ] **./stores** pinia stores
  - [ ] **/tests**  test folder (\*\*.test.\*\* or \*\*.spec.\*\*)
+   - [x] **./components** test for components
+   - [ ] **./models** test for data models
+   - [ ] **./stores** test store setup
+   - [x] **./plugins** test for plugins
+   
 
 
 ## Licensed

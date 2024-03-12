@@ -1,6 +1,6 @@
 <template>
   <v-app app>
-    <h1>Hello</h1>
+    <h1>{{ message }}</h1>
     <router-view />
   </v-app>
 </template>
@@ -9,7 +9,7 @@
 export default {
   data() {
     return {
-      // message: 'Hello Vue!'
+      message: 'Hello Vue!'
     };
   }
 }
