@@ -26,11 +26,11 @@ $ vitest
    - [x] **./views** vue-router components and its path fragment
    - [x] **./plugins** common plugins, including vuetify, vue-router
    - [ ] **./stores** pinia stores
- - [ ] **/tests**  test folder (\*\*.test.\*\* or \*\*.spec.\*\*)
+ - [ ] **/tests**  test folder, aliased `'%/'` (\*\*.test.\*\* or \*\*.spec.\*\*)
    - [x] **./components** test for components
    - [ ] **./models** test for data models
-   - [ ] **./stores** test store setup
    - [x] **./plugins** test for plugins
+   - [ ] **./stores** test store setup
    
 
 
