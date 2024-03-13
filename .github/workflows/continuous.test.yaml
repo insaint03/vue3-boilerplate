@@ -1,0 +1,17 @@
+name: continuous test
+run-name: unit test
+jobs:
+    run_unit_tests:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: read
+        steps:
+            # checkout the image
+            - uses: actions/checkout@latest
+            # prepare nodes
+            - name: 'Install Node'
+                uses: actions/setup-node@latest
+            - name: 'Install Deps'
+                run: npm install
+            - name: 'Test'
+                run: npx vitest --coverage.enabled true
