@@ -6,7 +6,7 @@ global.ResizeObserver = require('resize-observer-polyfill');
 
 module.exports = {
     async raw_component(component, props={}) {
-        return mount(component, props);
+        return mount(component, {props,});
     },
     async v_component(component, props={}) {
         return mount(component, {
@@ -14,6 +14,20 @@ module.exports = {
             global: {
                 plugins: [vuerouter, vuetify],
             }
+        });
+    },
+    testit(fn, title, expect) {
+        return it(title, async ()=>{
+            const actual = await fn();
+            let assertion = null;
+            if(typeof expect === 'function') {
+                assertion = expect(actual);
+            } else if(expect != null) {
+                assertion = (expect === actual);
+            } else {
+                assertion = actual;
+            }
+            assert(assertion, `expects ${expect} but ${actual}`);
         });
     }
 }

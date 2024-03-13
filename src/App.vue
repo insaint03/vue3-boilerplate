@@ -1,7 +1,9 @@
 <template>
   <v-app app>
-    <h1>{{ message }}</h1>
-    <router-view />
+    <h1>{{  message }}</h1>
+    <main>
+      <router-view />
+    </main>
   </v-app>
 </template>
 
@@ -9,7 +11,7 @@
 export default {
   data() {
     return {
-      message: 'Hello Vue!'
+      message: 'Hello Vue 3!',
     };
   }
 }
