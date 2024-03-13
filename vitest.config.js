@@ -15,6 +15,10 @@ export default mergeConfig(
           inline: ['vuetify'],
         }
       },
+      coverage: {
+        reporter: ['text-summary','html','json-summary'],
+        reportOnFailure: true,
+      }
     },
     resolve: {
       alias: {
